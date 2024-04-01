@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Article Page</title>
+        <link rel="stylesheet" href="styleblog.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav id="top">
+                <a href="blog.html"><img src="logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times-circle" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#post">POST</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+           </section> 
+
+    
+
+        <!-----ARTICLE CONTENT----->  
+        <section class="article-header">
+            <div class="header-content article-container">
+                <a href="blog.html" class="back-home">back to home</a>
+                <h1 class="header-title">The magic you are looking for ; Is in the work you're Avoiding </h1>
+                <img src="art6.jpg" class="header-img">
+            </div>
+        </section>
+ 
+    
+
+    <!-- Articles -->
+    <section class="article-content article-container">
+        <P>In the pursuit of success, we often find ourselves entangled in a relentless cycle—a race against 
+            time, chasing after elusive goals, and striving to prove our worth in a world that never seems to slow down. But amidst the chaos of this rat race, we often overlook a fundamental truth: the magic we seek lies not in the frantic pursuit of external markers of success, but rather in the work we love—the work we've been avoiding.
+
+            How many times have you caught yourself hesitating to pursue your true passion? How often have you allowed fear of failure
+             to hold you back from embracing the work that sets your soul on fire?<br>
+             But what if I told you that the key to unlocking success lies not in shying away from our passions, but in facing them head-on? What if I told you that the very work you've been avoiding holds the power to transform your life in ways you never thought possible?
+
+Here's the thing:
+            </P>
+        <h2 class="sub-heading">Fear of Failure</h2>
+        <p class="article-text">Often, the work we truly love or feel passionate about carries with it a higher risk of failure because it's tied closely to our personal aspirations and identity. This fear of failure can lead us to avoid pursuing such work altogether, opting instead for tasks that feel safer or more secure. However, by avoiding the work we love due to fear, 
+            we inadvertently trap ourselves in a cycle of mediocrity, where we settle for less fulfilling
+             endeavors just to avoid potential setbacks.    </p>
+            <h2 class="sub-heading">Comfort Zone Trap</h2>
+        <p class="article-text">It's human nature to gravitate towards familiarity and comfort. Even if we love a particular type of work, it may require stepping out of our comfort zones to pursue it fully. This discomfort can lead us to procrastinate or find excuses to avoid engaging with the work we're truly passionate about. As a result,
+             we find ourselves stuck in a routine or "rat race" of mundane tasks that offer little personal or professional growth.
+            </p>
+            <h2 class="sub-heading">External Expectations vs. Intrinsic Motivation</h2>
+        <p class="article-text">Society often places expectations on individuals regarding their career choices and paths to success. These external pressures can influence us to pursue certain careers or activities that may not align with our true passions or interests. Consequently, we may avoid the work we love in favor of conforming to societal norms or meeting others' expectations. However, true fulfillment often 
+            stems from intrinsic motivation and pursuing what genuinely resonates with us, even if it means going against the grain.
+            </p>
+            <h2 class="sub-heading">Lack of Self-Belief</h2>
+        <p class="article-text">Self-doubt can be a significant barrier to engaging with the work we love. If we don't believe in our abilities or potential for success, we're more likely to avoid taking the necessary steps to pursue our passions wholeheartedly. This lack of self-belief can manifest as procrastination, excuses, or prioritizing other tasks over the work that truly matters to us. Over time, this pattern reinforces 
+            feelings of inadequacy and keeps us trapped in the rat race of settling for less than what we're capable of achieving.
+            </p>
+            <p>In essence, by avoiding the work we love due to fear, comfort, external pressures, or self-doubt, we miss out on the opportunity for growth, fulfillment, and true magic in our lives. Breaking free from this cycle requires courage, self-awareness, and a willingness to embrace the uncertainty and challenges that come with pursuing our passions wholeheartedly.
+            </p>
+
+        
+    </section>
+    <!----Testimonial----->
+    <section class="test">
+        <h1>COMMENTS</h1><br>
+        
+             <div class="row">
+                <div class="test-col">
+                    <img src="thor1.jpg">
+             <div>
+                <P>This article beautifully articulates the importance of mindfulness in our daily lives. As someone who's struggled with stress and anxiety,
+                    incorporating mindfulness techniques has truly been transformative. Thank you for sharing these valuable insights!</P><br>
+                    <h3>Thorfinn Karlsefni</h3>
+             </div>
+                </div>
+             <div class="test-col">
+                <img src="zero.jpeg">
+            <div>
+               <P>I couldn't agree more with the points raised in this post about sustainable living. It's inspiring to see individuals and communities taking proactive steps towards reducing
+                 their environmental footprint. Every small action counts towards creating a healthier planet for future generations.</P><br>
+                   <h3>Zero Two</h3>
+            </div>
+             </div>
+             </div>  
+
+             <div class="coment">
+                <h3>Add a comment</h3>
+                <form id="commentForm" class="comment-form">
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <textarea id="comment" rows="3" placeholder="Comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                </form>
+             </div>
+
+    </section>
+    <script>
+        document.getElementById('commentForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            // Get form data
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var comment = document.getElementById('comment').value;
+    
+            // Optional: Send the form data to a server using AJAX
+            // Example: sendCommentData(name, email, comment);
+    
+            // Redirect to Thank You page after form submission
+            window.location.href = 'thank.html';
+        });
+    
+        function sendCommentData(name, email, comment) {
+            // Implement AJAX request to send form data to server
+        }
+    </script>
+
+
+      <!-----FOOTER-----> 
+      <section class="footer">
+        <h2 id="about">About Us</h2>
+        <p>At Bloom, we're dedicated to nurturing your journey 
+            of self-care and personal growth, providing inspiration and resources to help you blossom into your best self.</p>
+        <div class="icons">
+            <i class="fab fa-linkedin fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fas fa-envelope fa-2x"></i>
+            <i class="fab fa-whatsapp fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>  
+        </div>
+        <p>Website by <i class="far fa-heart"></i><b> Thorvi Parchand </b></p>
+        <p>© 2024 Bloom. All Rights Sprouted. Cultivating Inspiration at<span> www.webloom.com</span></p>
+
+        <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i> </a>
+
+    </section>
+
+<!--MENU-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            
+            function showmenu(){
+                navLinks.style.right = "0";
+            }
+            function hidemenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+        <!----JQurey----->
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<!----Link JS----->
+    <script src="main.js"></script>
+    
+    </body>
+</html>
+

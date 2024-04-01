@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Article Page</title>
+        <link rel="stylesheet" href="styleblog.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav id="top">
+                <a href="blog.html"><img src="logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times-circle" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#post">POST</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+           </section> 
+
+    
+
+        <!-----ARTICLE CONTENT----->  
+        <section class="article-header">
+            <div class="header-content article-container">
+                <a href="blog.html" class="back-home">Back To Blogs</a>
+                <h1 class="header-title">Working out will make you feel weak; when it's actually making you Stronger!</h1>
+                <img src="cat2.jpg" class="header-img">
+            </div>
+        </section>
+ 
+    
+
+    <!-- Articles -->
+    <section class="article-content article-container">
+        <P>We've all experienced that feeling of weakness after a rigorous workout. It's the soreness, the fatigue, and the temptation to just stay in bed for the rest of the day. But what if I told you that these moments of discomfort are actually signs of your strength building? Yes, that's right! Working out isn't about feeling weak; it's about becoming stronger, both physically and mentally.
+             Let's dive into how embracing the discomfort of exercise can transform you into a stronger, more resilient version of yourself.</P>
+        <h2 class="sub-heading">Embracing the Challenge</h2>
+        <p class="article-text">When you push your body to its limits, it's natural to feel discomfort. Whether it's lifting heavier weights, running an extra mile, or holding a difficult yoga pose, every challenge you overcome is a testament to your strength. Instead of 
+            shying away from discomfort, embrace it as a sign of growth. Each drop of sweat is a step closer to becoming the best version of yourself.
+            </p>
+            <h2 class="sub-heading">Rewiring Your Mindset</h2>
+        <p class="article-text">The mind is a powerful tool, capable of either limiting or enhancing your potential. By reframing your perception of discomfort, you can transform it from a negative obstacle into a positive catalyst for growth. Instead of dreading the burn of a workout, see it as your body 
+            adapting and becoming stronger. This shift in mindset not only boosts your confidence but also enhances your overall well-being.
+            </p>
+            <h2 class="sub-heading">Building Resilience</h2>
+        <p class="article-text">Life is full of challenges, and how we respond to them often determines our success. Just like in the gym, facing discomfort head-on builds resilience and grit. Each time you push through a tough workout, you're training yourself to persevere in the face of adversity. This resilience doesn't just apply to physical 
+            challenges but extends to all areas of your life, making you more capable of overcoming obstacles and achieving your goals.
+            </p>
+            <h2 class="sub-heading">Celebrating Progress</h2>
+        <p class="article-text">In a society obsessed with instant gratification, it's easy to overlook the importance of progress over perfection. Working out teaches us the value of consistent effort and gradual improvement. Instead of focusing solely on end goals, celebrate every small victory along the way. Whether it's lifting a heavier weight, running a 
+            faster mile, or simply showing up to exercise when you don't feel like it, each step forward is a cause for celebration.
+            </p>
+            <p>Next time you feel weak after a workout, remember that it's not a sign of failure but rather a testament to your strength in progress. Embrace the discomfort, rewire your mindset, build resilience, and celebrate your progress every step of the way. Working out isn't just about transforming your body; it's about transforming your mindset and becoming the strongest, most resilient version of yourself. So, 
+                lace up your sneakers, embrace the challenge, and watch yourself soar to new heights of strength and self-development. </p>
+
+        
+    </section>
+
+    <!----Testimonial----->
+    <section class="test">
+        <h1>COMMENTS</h1><br>
+        
+             <div class="row">
+                <div class="test-col">
+                    <img src="thor1.jpg">
+             <div>
+                <P>This article beautifully articulates the importance of mindfulness in our daily lives. As someone who's struggled with stress and anxiety,
+                    incorporating mindfulness techniques has truly been transformative. Thank you for sharing these valuable insights!</P><br>
+                    <h3>Thorfinn Karlsefni</h3>
+             </div>
+                </div>
+             <div class="test-col">
+                <img src="zero.jpeg">
+            <div>
+               <P>I couldn't agree more with the points raised in this post about sustainable living. It's inspiring to see individuals and communities taking proactive steps towards reducing
+                 their environmental footprint. Every small action counts towards creating a healthier planet for future generations.</P><br>
+                   <h3>Zero Two</h3>
+            </div>
+             </div>
+             </div>  
+
+             <div class="coment">
+                <h3>Add a comment</h3>
+                <form id="commentForm" class="comment-form">
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <textarea id="comment" rows="3" placeholder="Comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                </form>
+             </div>
+
+    </section>
+    <script>
+        document.getElementById('commentForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            // Get form data
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var comment = document.getElementById('comment').value;
+    
+            // Optional: Send the form data to a server using AJAX
+            // Example: sendCommentData(name, email, comment);
+    
+            // Redirect to Thank You page after form submission
+            window.location.href = 'thank.html';
+        });
+    
+        function sendCommentData(name, email, comment) {
+            // Implement AJAX request to send form data to server
+        }
+    </script>
+
+
+
+      <!-----FOOTER-----> 
+      <section class="footer">
+        <h2 id="about">About Us</h2>
+        <p>At Bloom, we're dedicated to nurturing your journey 
+            of self-care and personal growth, providing inspiration and resources to help you blossom into your best self.</p>
+        <div class="icons">
+            <i class="fab fa-linkedin fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fas fa-envelope fa-2x"></i>
+            <i class="fab fa-whatsapp fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>  
+        </div>
+        <p>Website by <i class="far fa-heart"></i><b> Thorvi Parchand </b></p>
+        <p>© 2024 Bloom. All Rights Sprouted. Cultivating Inspiration at<span> www.webloom.com</span></p>
+
+        <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i> </a>
+
+    </section>
+
+<!--MENU-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            
+            function showmenu(){
+                navLinks.style.right = "0";
+            }
+            function hidemenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+        <!----JQurey----->
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<!----Link JS----->
+    <script src="main.js"></script>
+    
+    </body>
+</html>
+

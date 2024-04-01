@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Article Page</title>
+        <link rel="stylesheet" href="styleblog.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav id="top">
+                <a href="blog.html"><img src="logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times-circle" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#post">POST</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+           </section> 
+
+    
+
+        <!-----ARTICLE CONTENT----->  
+        <section class="article-header">
+            <div class="header-content article-container">
+                <a href="blog.html" class="back-home">back to home</a>
+                <h1 class="header-title">Unlock the Beauty: Four Secrets to Sprinkle Magic into Your Life!</h1>
+                <img src="mojo.jpg" class="header-img">
+            </div>
+        </section>
+ 
+    
+
+    <!-- Articles -->
+    <section class="article-content article-container">
+        <P>Hey there, fellow life enthusiast! Ready to sprinkle a little magic into your everyday routine? Buckle up because we're about to embark on a journey to unveil the secrets that will turn your life from ordinary
+             to extraordinary. Get ready to embrace the beauty around you with these four game-changing tips</P>
+        <h2 class="sub-heading">Morning Mojo: Rise, Shine, and Grind with Gratitude!</h2>
+        <p class="article-text">Picture this: you wake up, stretch, and instead of reaching for your phone, you take a moment to 
+            bask in the glow of gratitude. Yep, that's right – starting your day with a dose of thankfulness sets the tone for a positively
+             magical day ahead. Whether it's appreciating the sun streaming through your window or just being grateful for that first sip of coffee, a sprinkle of gratitude can transform the mundane into the magnificent.
+            </p>
+            <h2 class="sub-heading">Dance in the Rain: Embrace Life's Plot Twists with Panache!</h2>
+        <p class="article-text">Life's a rollercoaster, right? But hey, who says you can't throw your hands up and scream with excitement? When 
+            those inevitable plot twists come knocking, don't cower in fear – embrace them like the hero of your own story! Every challenge is just another chance to flex those resilience muscles 
+            and emerge even stronger. So, dance in the rain, my friend, and watch as your life becomes a masterpiece of resilience and grace.
+            </p>
+            <h2 class="sub-heading">Passion Projects: Chase Dreams Like You're Hunting Unicorns!</h2>
+        <p class="article-text">What lights your fire? What makes your heart sing with joy? Whatever it is, grab onto it with both hands and never let go! Whether it's painting, writing, or basket-weaving, your passion projects are the secret ingredient to a 
+            life brimming with color and excitement. So, dust off that old guitar or pick up that paintbrush – your inner artist is calling, 
+            and it's time to unleash your creative unicorn!
+            </p>
+            <h2 class="sub-heading">Spread the Love: Hug More, Judge Less, and Watch Miracles Unfold!</h2>
+        <p class="article-text">Love – it's the glue that holds the universe together! So, why not sprinkle it around like confetti?
+             Whether it's a random act of kindness or simply offering a listening ear, spreading love is the fastest way to invite more magic
+              into your life. So, hug more, judge less, and watch in awe as the world around you transforms into a kaleidoscope of love and wonder.
+            </p>
+            <p>There you have it, folks – four foolproof secrets to sprinkling a little extra magic into your life! So, go forth, embrace the beauty around you, and remember – the world is your playground, so why not make it the most enchanting one yet?
+            </p>
+
+        
+    </section>
+    <!----Testimonial----->
+    <section class="test">
+        <h1>COMMENTS</h1><br>
+        
+             <div class="row">
+                <div class="test-col">
+                    <img src="thor1.jpg">
+             <div>
+                <P>This article beautifully articulates the importance of mindfulness in our daily lives. As someone who's struggled with stress and anxiety,
+                    incorporating mindfulness techniques has truly been transformative. Thank you for sharing these valuable insights!</P><br>
+                    <h3>Thorfinn Karlsefni</h3>
+             </div>
+                </div>
+             <div class="test-col">
+                <img src="zero.jpeg">
+            <div>
+               <P>I couldn't agree more with the points raised in this post about sustainable living. It's inspiring to see individuals and communities taking proactive steps towards reducing
+                 their environmental footprint. Every small action counts towards creating a healthier planet for future generations.</P><br>
+                   <h3>Zero Two</h3>
+            </div>
+             </div>
+             </div>  
+
+             <div class="coment">
+                <h3>Add a comment</h3>
+                <form id="commentForm" class="comment-form">
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <textarea id="comment" rows="3" placeholder="Comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                </form>
+             </div>
+
+    </section>
+
+<script>
+        document.getElementById('commentForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            // Get form data
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var comment = document.getElementById('comment').value;
+    
+            // Optional: Send the form data to a server using AJAX
+            // Example: sendCommentData(name, email, comment);
+    
+            // Redirect to Thank You page after form submission
+            window.location.href = 'thank.html';
+        });
+    
+        function sendCommentData(name, email, comment) {
+            // Implement AJAX request to send form data to server
+        }
+    </script>
+
+      <!-----FOOTER-----> 
+      <section class="footer">
+        <h2 id="about">About Us</h2>
+        <p>At Bloom, we're dedicated to nurturing your journey 
+            of self-care and personal growth, providing inspiration and resources to help you blossom into your best self.</p>
+        <div class="icons">
+            <i class="fab fa-linkedin fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fas fa-envelope fa-2x"></i>
+            <i class="fab fa-whatsapp fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>  
+        </div>
+        <p>Website by <i class="far fa-heart"></i><b> Thorvi Parchand </b></p>
+        <p>© 2024 Bloom. All Rights Sprouted. Cultivating Inspiration at<span> www.webloom.com</span></p>
+
+        <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i> </a>
+
+    </section>
+
+<!--MENU-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            
+            function showmenu(){
+                navLinks.style.right = "0";
+            }
+            function hidemenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+        <!----JQurey----->
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<!----Link JS----->
+    <script src="main.js"></script>
+    
+    </body>
+</html>
+

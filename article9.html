@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Article Page</title>
+        <link rel="stylesheet" href="styleblog.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav id="top">
+                <a href="blog.html"><img src="logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times-circle" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#post">POST</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+           </section> 
+
+    
+
+        <!-----ARTICLE CONTENT----->  
+        <section class="article-header">
+            <div class="header-content article-container">
+                <a href="blog.html" class="back-home">Back To Blogs</a>
+                <h1 class="header-title"> They say you've changed, Because they don't know how to say "You've Grown"</h1>
+                <img src="rich.jpg" class="header-img">
+            </div>
+        </section>
+ 
+    
+
+    <!-- Articles -->
+    <section class="article-content article-container">
+        <P>In the journey of life, we often encounter moments where others perceive us differently. Sometimes, these perceptions manifest as the phrase, "You've changed." It's a statement laden with nuances, often carrying connotations of disappointment or discomfort. 
+            However, amidst the weight of these words lies a profound truth: change is inevitable, and it's often synonymous with growth.</P>
+        <h2 class="sub-heading">Change as a Constant</h2>
+        <p class="article-text">Change is an integral part of the human experience. From our infancy to adulthood, we undergo continuous transformations—physically, emotionally, and mentally. Each experience, encounter, and challenge shapes us in ways both subtle 
+            and profound. Embracing change means recognizing its inevitability and accepting it as a catalyst for personal development.
+            </p>
+            <h2 class="sub-heading">Perception vs. Reality</h2>
+        <p class="article-text">When someone remarks, "You've changed," it's crucial to distinguish between perception and reality. Often, people perceive change through the lens of their expectations or biases. What they interpret as deviation from the familiar might actually signify personal evolution and progress.
+             It's essential not to let others' perceptions overshadow our own understanding of growth and self-discovery.
+            </p>
+            <h2 class="sub-heading">The Art of Growth</h2>
+        <p class="article-text"> Growth is a multifaceted journey encompassing self-awareness, resilience, and learning. It involves stepping out of comfort zones, confronting challenges, and embracing new experiences. Each obstacle surmounted, each lesson learned, contributes to our growth trajectory. Instead of fearing
+             change, we can view it as an opportunity for self-reflection and advancement towards our fullest potential.
+            </p>
+            <h2 class="sub-heading">Empowerment in Transformation</h2>
+        <p class="article-text">Transformative change is empowering—it signifies our capacity to adapt, evolve, and thrive in the face of adversity. While external feedback may sometimes evoke discomfort, it's essential to reclaim agency over our narratives. Rather than succumbing to the fear of judgment, we can celebrate our growth journey and acknowledge the resilience it has
+             cultivated within us. Every transformation, no matter how subtle, embodies the resilience of the human spirit.
+            </p>
+            <p>In essence, the transition from "You've changed" to "You've grown" is more than a semantic shift—it's a paradigmatic one. It's about reclaiming agency over our narratives, embracing the inevitability of change, and recognizing growth as a testament to our resilience. So, the next time someone remarks, "You've changed," remember to respond with pride, for it's a testament to the beautiful journey of growth you've embarked upon. After all,
+                 change is not merely about becoming someone different; it's about evolving into the best version of ourselves. </p>
+
+        
+    </section>
+
+    <!----Testimonial----->
+    <section class="test">
+        <h1>COMMENTS</h1><br>
+        
+             <div class="row">
+                <div class="test-col">
+                    <img src="thor1.jpg">
+             <div>
+                <P>This article beautifully articulates the importance of mindfulness in our daily lives. As someone who's struggled with stress and anxiety,
+                    incorporating mindfulness techniques has truly been transformative. Thank you for sharing these valuable insights!</P><br>
+                    <h3>Thorfinn Karlsefni</h3>
+             </div>
+                </div>
+             
+             <div class="test-col">
+                <img src="zero.jpeg">
+            <div>
+               <P>I couldn't agree more with the points raised in this post about sustainable living. It's inspiring to see individuals and communities taking proactive steps towards reducing
+                 their environmental footprint. Every small action counts towards creating a healthier planet for future generations.</P><br>
+                   <h3>Zero Two</h3>
+            </div>
+             </div>
+             </div> 
+
+             <div class="coment">
+                <h3>Add a comment</h3>
+                <form id="commentForm" action="https://api.web3forms.com/submit" method="POST" class="comment-form">
+                    <form id="myForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="42c20079-4a90-4e55-8848-a9e93c553d37">
+    
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <textarea id="comment" rows="3" placeholder="Comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                </form>
+             </div>
+
+    </section>
+
+    <script>
+        document.getElementById('commentForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            // Get form data
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var comment = document.getElementById('comment').value;
+    
+            // Optional: Send the form data to a server using AJAX
+            // Example: sendCommentData(name, email, comment);
+    
+            // Redirect to Thank You page after form submission
+            window.location.href = 'thank.html';
+        });
+    
+        function sendCommentData(name, email, comment) {
+            // Implement AJAX request to send form data to server
+        }
+    </script>
+
+
+      <!-----FOOTER-----> 
+      <section class="footer">
+        <h2 id="about">About Us</h2>
+        <p>At Bloom, we're dedicated to nurturing your journey 
+            of self-care and personal growth, providing inspiration and resources to help you blossom into your best self.</p>
+        <div class="icons">
+            <i class="fab fa-linkedin fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fas fa-envelope fa-2x"></i>
+            <i class="fab fa-whatsapp fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>  
+        </div>
+        <p>Website by <i class="far fa-heart"></i><b> Thorvi Parchand </b></p>
+        <p>© 2024 Bloom. All Rights Sprouted. Cultivating Inspiration at<span> www.webloom.com</span></p>
+
+        <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i> </a>
+
+    </section>
+
+<!--MENU-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            
+            function showmenu(){
+                navLinks.style.right = "0";
+            }
+            function hidemenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+        <!----JQurey----->
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<!----Link JS----->
+    <script src="main.js"></script>
+    
+    </body>
+</html>
+

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Article Page</title>
+        <link rel="stylesheet" href="styleblog.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav id="top">
+                <a href="blog.html"><img src="logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times-circle" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#post">POST</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+           </section> 
+
+    
+
+        <!-----ARTICLE CONTENT----->  
+        <section class="article-header">
+            <div class="header-content article-container">
+                <a href="blog.html" class="back-home">Back To Blogs</a>
+                <h1 class="header-title">Learning new skills made you feel dumb ; when it's actually making you Smarter!</h1>
+                <img src="mouse.jpg" class="header-img">
+            </div>
+        </section>
+ 
+    
+
+    <!-- Articles -->
+    <section class="article-content article-container">
+        <P>In a world where instant gratification often reigns supreme, the journey of learning new skills can sometimes feel like an 
+            uphill battle. From grappling with unfamiliar concepts to making embarrassing mistakes, the process can leave us feeling anything
+             but intelligent. However, what if I told you that feeling dumb during the learning process is not only normal but a sign of growth? In this blog post, we'll 
+            explore how embracing this discomfort can actually lead to significant intellectual development and personal growth.</P>
+        <h2 class="sub-heading">Shift Your Mindset</h2>
+        <p class="article-text">It's time to reframe the way we perceive feeling dumb. Instead of viewing it as a
+             setback, see it as a sign of progress. When you step out of your comfort zone and engage with new ideas, 
+             you're challenging your brain to adapt and evolve. Remember, every great mind once grappled with the feeling
+              of incompetence before mastering their craft.
+            </p>
+            <h2 class="sub-heading">Embrace the Learning Curve</h2>
+        <p class="article-text">Learning is not meant to be a smooth, linear journey. It's messy, unpredictable,
+             and often accompanied by moments of frustration. Instead of shying away from challenges, embrace them as opportunities 
+             for growth. Every mistake you make
+             is a valuable lesson learned, bringing you one step closer to mastery.
+            </p>
+            <h2 class="sub-heading">Celebrate Small Wins</h2>
+        <p class="article-text">In the midst of feeling dumb, it's essential to celebrate your progress, 
+            no matter how small. Whether you finally understand a complex concept or successfully execute a new skill,
+             take a moment to acknowledge your achievements. By focusing on the positives, you'll build momentum and confidence 
+             to tackle even greater challenges ahead.
+            </p>
+            <h2 class="sub-heading">Persevere with Patience</h2>
+        <p class="article-text">Rome wasn't built in a day, and neither is expertise. Learning new skills takes time,
+             dedication, and above all, patience. Instead of succumbing to feelings of inadequacy, trust in your ability 
+             to improve over time. Remember,
+             every expert was once a beginner who refused to give up in the face of adversity.
+            </p>
+            <p>Feeling dumb during the learning process is not a reflection of your intelligence but a testament to your
+                 willingness to grow. By shifting your mindset, embracing the learning curve, celebrating small wins, and persevering
+                  with patience, you'll not only become smarter but also more resilient and adaptable. So, the next time you feel dumb while learning a new skill, remember that you're actually on the path to becoming a better, brighter version of yourself.
+                 Keep pushing forward, and soon enough, you'll look back and marvel at how far you've come. </p>
+
+        
+    </section>
+
+    <!----Testimonial----->
+    <section class="test">
+        <h1>COMMENTS</h1><br>
+        
+             <div class="row">
+                <div class="test-col">
+                    <img src="thor1.jpg">
+             <div>
+                <P>This article beautifully articulates the importance of mindfulness in our daily lives. As someone who's struggled with stress and anxiety,
+                    incorporating mindfulness techniques has truly been transformative. Thank you for sharing these valuable insights!</P><br>
+                    <h3>Thorfinn Karlsefni</h3>
+             </div>
+                </div>
+             <div class="test-col">
+                <img src="zero.jpeg">
+            <div>
+               <P>I couldn't agree more with the points raised in this post about sustainable living. It's inspiring to see individuals and communities taking proactive steps towards reducing
+                 their environmental footprint. Every small action counts towards creating a healthier planet for future generations.</P><br>
+                   <h3>Zero Two</h3>
+            </div>
+             </div>
+             </div>  
+
+             <div class="coment">
+                <h3>Add a comment</h3>
+                <form id="commentForm" class="comment-form">
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <textarea id="comment" rows="3" placeholder="Comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                </form>
+             </div>
+
+    </section>
+
+
+    <script>
+        document.getElementById('commentForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            // Get form data
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var comment = document.getElementById('comment').value;
+    
+            // Optional: Send the form data to a server using AJAX
+            // Example: sendCommentData(name, email, comment);
+    
+            // Redirect to Thank You page after form submission
+            window.location.href = 'thank.html';
+        });
+    
+        function sendCommentData(name, email, comment) {
+            // Implement AJAX request to send form data to server
+        }
+    </script>
+
+      <!-----FOOTER-----> 
+      <section class="footer">
+        <h2 id="about">About Us</h2>
+        <p>At Bloom, we're dedicated to nurturing your journey 
+            of self-care and personal growth, providing inspiration and resources to help you blossom into your best self.</p>
+        <div class="icons">
+            <i class="fab fa-linkedin fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fas fa-envelope fa-2x"></i>
+            <i class="fab fa-whatsapp fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>  
+        </div>
+        <p>Website by <i class="far fa-heart"></i><b> Thorvi Parchand </b></p>
+        <p>© 2024 Bloom. All Rights Sprouted. Cultivating Inspiration at<span> www.webloom.com</span></p>
+
+        <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i> </a>
+
+    </section>
+
+<!--MENU-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            
+            function showmenu(){
+                navLinks.style.right = "0";
+            }
+            function hidemenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+        <!----JQurey----->
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<!----Link JS----->
+    <script src="main.js"></script>
+    
+    </body>
+</html>
+

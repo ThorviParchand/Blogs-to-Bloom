@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Article Page</title>
+        <link rel="stylesheet" href="styleblog.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav id="top">
+                <a href="blog.html"><img src="logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times-circle" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#post">POST</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+           </section> 
+
+    
+
+        <!-----ARTICLE CONTENT----->  
+        <section class="article-header">
+            <div class="header-content article-container">
+                <a href="blog.html" class="back-home">Back To Blogs</a>
+                <h1 class="header-title">Unleash Your Inner Creative: 4 Playful Ways to Embrace Your Human Canvas!</h1>
+                <img src="blog8.jpg" class="header-img">
+            </div>
+        </section>
+ 
+    
+
+    <!-- Articles -->
+    <section class="article-content article-container">
+        <P>Are you ready to paint the canvas of your life with bold strokes of creativity and imagination? Being a creative human isn't just about creating art; it's about infusing every aspect of your existence with innovation and inspiration. Here are four catchy
+             and attractive ways to tap into your inner creative genius and live a life that's as vibrant as a masterpiece</P>
+        <h2 class="sub-heading">Dance Like Nobody's Watching</h2>
+        <p class="article-text">Turn up the music and let your body be your paintbrush! Dancing isn't just a form of exercise – it's a celebration
+             of self-expression and joy. Whether you're grooving to your favorite song in the shower or busting a move on the dance floor, let go of inhibitions and dance like nobody's watching. Not only will you feel more alive and 
+            energized, but you'll also unleash a flood of creativity that'll leave you feeling inspired and invigorated.
+            </p>
+            <h2 class="sub-heading">Playful Exploration</h2>
+        <p class="article-text">Remember the boundless curiosity and wonder you felt as a child? Channel that same sense of playfulness and embark
+             on a journey of exploration and discovery. Whether it's wandering through a new neighborhood, exploring a hidden gem in your city, or simply taking a different route on your morning walk, embrace
+             the thrill of the unknown and let your imagination run wild. Who knows what hidden treasures you'll uncover along the way?
+            </p>
+            <h2 class="sub-heading">Create Your Own Story</h2>
+        <p class="article-text">Life is a blank page waiting to be filled with the stories we choose to write. Instead of waiting 
+            for the perfect plot twist, take control of your narrative and create your own story. Whether it's through journaling, storytelling, or creating art, give yourself permission to express your thoughts, feelings, and dreams in your own unique
+             way. Remember, you're the author of your own destiny – so why not make it a bestseller?
+            </p>
+            <h2 class="sub-heading">Collaborative Connections</h2>
+        <p class="article-text">Creativity thrives in collaboration. Surround yourself with fellow creators, innovators, and dreamers who inspire
+             and challenge you to think outside the box. Whether it's joining a creative workshop, participating in a brainstorming session, or simply engaging in meaningful conversations with like-minded souls, seek out opportunities 
+            to connect and collaborate with others. Together, you'll spark ideas, ignite passions, and create something truly extraordinary.
+            </p>
+            <p>So there you have it – four playful ways to unleash your inner creative and embrace the boundless possibilities of 
+                being a human canvas. Whether you're dancing to the rhythm of your own heartbeat, exploring the wonders of the world around you, crafting your
+                 own story, or collaborating with kindred spirits, remember to embrace
+                  the joy of creativity and let your imagination soar! </p>
+
+        
+    </section>
+
+    <!----Testimonial----->
+    <section class="test">
+        <h1>COMMENTS</h1><br>
+        
+             <div class="row">
+                <div class="test-col">
+                    <img src="thor1.jpg">
+             <div>
+                <P>This article beautifully articulates the importance of mindfulness in our daily lives. As someone who's struggled with stress and anxiety,
+                    incorporating mindfulness techniques has truly been transformative. Thank you for sharing these valuable insights!</P><br>
+                    <h3>Thorfinn Karlsefni</h3>
+             </div>
+                </div>
+             <div class="test-col">
+                <img src="zero.jpeg">
+            <div>
+               <P>I couldn't agree more with the points raised in this post about sustainable living. It's inspiring to see individuals and communities taking proactive steps towards reducing
+                 their environmental footprint. Every small action counts towards creating a healthier planet for future generations.</P><br>
+                   <h3>Zero Two</h3>
+            </div>
+             </div>
+             </div>  
+
+             <div class="coment">
+                <h3>Add a comment</h3>
+                <form id="commentForm" class="comment-form">
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <textarea id="comment" rows="3" placeholder="Comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                </form>
+             </div>
+
+    </section>
+
+<script>
+        document.getElementById('commentForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            // Get form data
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var comment = document.getElementById('comment').value;
+    
+            // Optional: Send the form data to a server using AJAX
+            // Example: sendCommentData(name, email, comment);
+    
+            // Redirect to Thank You page after form submission
+            window.location.href = 'thank.html';
+        });
+    
+        function sendCommentData(name, email, comment) {
+            // Implement AJAX request to send form data to server
+        }
+    </script>
+
+
+      <!-----FOOTER-----> 
+      <section class="footer">
+        <h2 id="about">About Us</h2>
+        <p>At Bloom, we're dedicated to nurturing your journey 
+            of self-care and personal growth, providing inspiration and resources to help you blossom into your best self.</p>
+        <div class="icons">
+            <i class="fab fa-linkedin fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fas fa-envelope fa-2x"></i>
+            <i class="fab fa-whatsapp fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>  
+        </div>
+        <p>Website by <i class="far fa-heart"></i><b> Thorvi Parchand </b></p>
+        <p>© 2024 Bloom. All Rights Sprouted. Cultivating Inspiration at<span> www.webloom.com</span></p>
+
+        <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i> </a>
+
+    </section>
+
+<!--MENU-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            
+            function showmenu(){
+                navLinks.style.right = "0";
+            }
+            function hidemenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+        <!----JQurey----->
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<!----Link JS----->
+    <script src="main.js"></script>
+    
+    </body>
+</html>
+

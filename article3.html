@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Article Page</title>
+        <link rel="stylesheet" href="styleblog.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav id="top">
+                <a href="blog.html"><img src="logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times-circle" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#post">POST</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+           </section> 
+
+    
+
+        <!-----ARTICLE CONTENT----->  
+        <section class="article-header">
+            <div class="header-content article-container">
+                <a href="blog.html" class="back-home">back to home</a>
+                <h1 class="header-title">Investing in yourself will make you feel broke; when it's actually making you Rich!</h1>
+                <img src="art3.jpg" class="header-img">
+            </div>
+        </section>
+ 
+    
+
+    <!-- Articles -->
+    <section class="article-content article-container">
+        <P>Picture this: you've just enrolled in that online course you've been eyeing for months, or perhaps you've signed up for a gym membership to kickstart your fitness journey. Excited? Absolutely. But then reality hits—you check your bank account, and suddenly, you're feeling the pinch. Investing in yourself can sometimes feel like a financial rollercoaster, with the initial thrill quickly followed by a sinking feeling of "Where did all my money go?" But fear not, because what may seem like financial 
+            discomfort now is actually a sign that you're on the right track to becoming richer in ways you never imagined.</P>
+        <h2 class="sub-heading">The Budgeting Blues</h2>
+        <p class="article-text">Let's face it: investing in yourself often means reallocating funds from other areas of your life. Maybe it's sacrificing those weekend takeout dinners or cutting back on impulse purchases. Suddenly, your budget feels tighter than ever, and it's tempting to second-guess your decisions. But remember, it's okay to
+             prioritize yourself occasionally. Think of it as giving up a few snacks now to feast on a gourmet meal later.       </p>
+            <h2 class="sub-heading">Delayed Gratification and the Impatience Trap</h2>
+        <p class="article-text">In a world of instant gratification, waiting for the fruits of your self-investment can feel agonizing. You've bought the books, attended the workshops, put in the hours, and yet, the tangible results seem elusive. It's natural to question whether it's all worth it, especially when you're not seeing immediate returns. But remember, personal growth is a marathon, not
+             a sprint. Trust in the process, and know that every small step forward is paving the way for a brighter future.
+            </p>
+            <h2 class="sub-heading">Navigating the Comparison Game</h2>
+        <p class="article-text">Scrolling through social media, it's easy to feel like everyone else is living their best life while you're pinching pennies to pursue your dreams. The temptation to compare your journey to others' highlight reels can be overwhelming, leading to feelings of inadequacy or FOMO (fear of missing out). But remember, your path is uniquely yours. Focus on your progress, celebrate your victories (no matter how small), and trust
+             that your investment in yourself will pay off in ways that transcend likes and comments.
+            </p>
+            <h2 class="sub-heading">Finding Wealth in Unexpected Places</h2>
+        <p class="article-text">While your bank account may feel depleted, take a moment to reflect on the wealth you're
+             accumulating elsewhere. Perhaps you've gained a newfound sense of confidence from conquering your fears, or maybe you've forged deeper connections with like-minded individuals on your journey. These 
+            intangible riches are invaluable and far outweigh any temporary financial strain you may experience.
+            </p>
+            <p>Feeling broke as a result of investing in yourself is not only common but also a sign that you're actively pursuing growth and enrichment in your life. So, the next time you find yourself questioning whether it's all worth it, remember this: the discomfort you feel now is merely a stepping stone to a future filled with abundance, fulfillment, and success. Keep investing in yourself, keep believing in your journey, and watch as the riches—both tangible and 
+                intangible—unfold before your eyes. After all, the greatest investment you can ever make is in yourself.      </p>
+
+        
+    </section>
+    <!----Testimonial----->
+    <section class="test">
+        <h1>COMMENTS</h1><br>
+        
+             <div class="row">
+                <div class="test-col">
+                    <img src="thor1.jpg">
+             <div>
+                <P>This article beautifully articulates the importance of mindfulness in our daily lives. As someone who's struggled with stress and anxiety,
+                    incorporating mindfulness techniques has truly been transformative. Thank you for sharing these valuable insights!</P><br>
+                    <h3>Thorfinn Karlsefni</h3>
+             </div>
+                </div>
+             <div class="test-col">
+                <img src="zero.jpeg">
+            <div>
+               <P>I couldn't agree more with the points raised in this post about sustainable living. It's inspiring to see individuals and communities taking proactive steps towards reducing
+                 their environmental footprint. Every small action counts towards creating a healthier planet for future generations.</P><br>
+                   <h3>Zero Two</h3>
+            </div>
+             </div>
+             </div>  
+
+             <div class="coment">
+                <h3>Add a comment</h3>
+                <form id="commentForm" class="comment-form">
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <textarea id="comment" rows="3" placeholder="Comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                </form>
+             </div>
+
+    </section>
+
+    <script>
+        document.getElementById('commentForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            // Get form data
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var comment = document.getElementById('comment').value;
+    
+            // Optional: Send the form data to a server using AJAX
+            // Example: sendCommentData(name, email, comment);
+    
+            // Redirect to Thank You page after form submission
+            window.location.href = 'thank.html';
+        });
+    
+        function sendCommentData(name, email, comment) {
+            // Implement AJAX request to send form data to server
+        }
+    </script>
+
+      <!-----FOOTER-----> 
+      <section class="footer">
+        <h2 id="about">About Us</h2>
+        <p>At Bloom, we're dedicated to nurturing your journey 
+            of self-care and personal growth, providing inspiration and resources to help you blossom into your best self.</p>
+        <div class="icons">
+            <i class="fab fa-linkedin fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fas fa-envelope fa-2x"></i>
+            <i class="fab fa-whatsapp fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>  
+        </div>
+        <p>Website by <i class="far fa-heart"></i><b> Thorvi Parchand </b></p>
+        <p>© 2024 Bloom. All Rights Sprouted. Cultivating Inspiration at<span> www.webloom.com</span></p>
+
+        <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i> </a>
+
+    </section>
+
+<!--MENU-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            
+            function showmenu(){
+                navLinks.style.right = "0";
+            }
+            function hidemenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+        <!----JQurey----->
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<!----Link JS----->
+    <script src="main.js"></script>
+    
+    </body>
+</html>
+
